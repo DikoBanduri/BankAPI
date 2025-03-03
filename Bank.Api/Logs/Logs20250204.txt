@@ -1,0 +1,26 @@
+2025-02-04 23:51:24.963 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-04 23:51:25.477 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-04 23:51:25.479 +04:00 [INF] Hosting environment: Development
+2025-02-04 23:51:25.481 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-04 23:51:40.898 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger - -
+2025-02-04 23:51:44.491 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger - - - 301 0 - 3405.9737ms
+2025-02-04 23:51:45.734 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-04 23:51:46.343 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 608.8126ms
+2025-02-04 23:51:47.754 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/swagger-ui.css - -
+2025-02-04 23:51:47.840 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/swagger-ui-bundle.js - -
+2025-02-04 23:51:47.873 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/swagger-ui-standalone-preset.js - -
+2025-02-04 23:51:47.873 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-04 23:51:47.879 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 6.0584ms
+2025-02-04 23:51:47.928 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-04 23:51:48.252 +04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-02-04 23:51:48.252 +04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-02-04 23:51:48.258 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/swagger-ui.css - - - 200 144929 text/css 503.9553ms
+2025-02-04 23:51:48.258 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 384.6818ms
+2025-02-04 23:51:48.339 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 410.6794ms
+2025-02-04 23:51:48.386 +04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-02-04 23:51:48.391 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 551.6329ms
+2025-02-04 23:51:49.071 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-04 23:51:49.701 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/favicon-32x32.png - -
+2025-02-04 23:51:49.703 +04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-02-04 23:51:49.710 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/favicon-32x32.png - - - 200 628 image/png 9.1904ms
+2025-02-04 23:51:50.304 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 1232.6176ms

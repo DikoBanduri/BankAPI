@@ -1,0 +1,8 @@
+{
+  "Bank.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\AllProgramming\\Bank\\Bank.Api",
+  "Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\AllProgramming\\Bank\\Bank.DTO",
+  "Bank.Extension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\AllProgramming\\Bank\\Bank.Extension",
+  "Bank.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\AllProgramming\\Bank\\Bank.Model",
+  "Bank.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\AllProgramming\\Bank\\Bank.Repository",
+  "Bank.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\AllProgramming\\Bank\\Bank.Service"
+}

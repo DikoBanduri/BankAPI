@@ -1,0 +1,828 @@
+2025-02-14 01:42:04.359 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-14 01:42:04.788 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-14 01:42:04.792 +04:00 [INF] Hosting environment: Development
+2025-02-14 01:42:04.795 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-14 01:42:21.899 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-14 01:42:23.439 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 1519.0551ms
+2025-02-14 01:42:24.829 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-14 01:42:24.835 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 5.7430ms
+2025-02-14 01:42:24.887 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-14 01:42:25.167 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 279.9776ms
+2025-02-14 01:42:25.296 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-14 01:42:26.104 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 807.7724ms
+2025-02-14 01:42:42.559 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/User - -
+2025-02-14 01:42:42.690 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.UserController.GetUsers (Bank.Api)'
+2025-02-14 01:42:42.917 +04:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.User]] GetUsers() on controller Bank.Api.Controllers.UserController (Bank.Api).
+2025-02-14 01:42:47.574 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:42:47.578 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:42:47.581 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:42:47.588 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:42:47.595 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:42:47.599 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:42:47.968 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.User, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:42:57.292 +04:00 [INF] Executed DbCommand (633ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreateDate], [u].[CustomerId], [u].[IsDelete], [u].[Password], [u].[RegistrationDate], [u].[UserName]
+FROM [Users] AS [u]
+2025-02-14 01:42:57.528 +04:00 [INF] Executed action Bank.Api.Controllers.UserController.GetUsers (Bank.Api) in 14599.8634ms
+2025-02-14 01:42:57.532 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.UserController.GetUsers (Bank.Api)'
+2025-02-14 01:42:57.546 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/User - - - 200 - application/json;+charset=utf-8 14986.4205ms
+2025-02-14 01:44:19.835 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 163
+2025-02-14 01:44:19.933 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:44:19.937 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:44:20.000 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-14 01:44:21.752 +04:00 [INF] Executed DbCommand (957ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Size = 25), @p5='?' (Size = 11), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-14 01:44:22.198 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'Bank.Repository.BankDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Customers_Cities_CityId". The conflict occurred in database "TestBase", table "dbo.Cities", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:d152848c-820a-411d-ac74-4b490a9e4508
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Customers_Cities_CityId". The conflict occurred in database "TestBase", table "dbo.Cities", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:d152848c-820a-411d-ac74-4b490a9e4508
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-14 01:44:22.325 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 2321.1341ms
+2025-02-14 01:44:22.344 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:44:22.355 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Customers_Cities_CityId". The conflict occurred in database "TestBase", table "dbo.Cities", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:d152848c-820a-411d-ac74-4b490a9e4508
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Bank.Repository.UnitOfWork.SaveChangesAsync() in D:\AllProgramming\Bank\Bank.Repository\UnitOfWork.cs:line 39
+   at Bank.Service.CustomerService.AddCustomerAsync(Customer customer) in D:\AllProgramming\Bank\Bank.Service\CustomerService.cs:line 65
+   at CustomerController.CreateCustomerAsync(CustomerModel customerModel) in D:\AllProgramming\Bank\Bank.Api\Controllers\CustomerController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:44:22.775 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 163 - 500 - text/plain;+charset=utf-8 2940.4649ms
+2025-02-14 01:46:21.901 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-14 01:46:22.259 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-14 01:46:22.273 +04:00 [INF] Hosting environment: Development
+2025-02-14 01:46:22.281 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-14 01:46:22.353 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-14 01:46:23.373 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 1026.9678ms
+2025-02-14 01:46:23.528 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-14 01:46:23.529 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-14 01:46:23.860 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 331.7869ms
+2025-02-14 01:46:24.003 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 473.9640ms
+2025-02-14 01:46:24.296 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-14 01:46:24.689 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 393.0777ms
+2025-02-14 01:46:35.067 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Customer - -
+2025-02-14 01:46:35.132 +04:00 [INF] Executing endpoint 'CustomerController.GetCustomers (Bank.Api)'
+2025-02-14 01:46:35.189 +04:00 [INF] Route matched with {action = "GetCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Customer]] GetCustomers() on controller CustomerController (Bank.Api).
+2025-02-14 01:46:37.045 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:46:37.048 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:46:37.050 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:46:37.054 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:46:37.066 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:46:37.070 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-14 01:46:37.503 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Customer, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:46:38.995 +04:00 [INF] Executed DbCommand (326ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CityId], [c].[CreateDate], [c].[FirstName], [c].[Gender], [c].[IsDelete], [c].[LastName], [c].[PersonalNumber], [c].[Phone1], [c].[Phone2], [c].[UserId]
+FROM [Customers] AS [c]
+2025-02-14 01:46:39.068 +04:00 [INF] Executed action CustomerController.GetCustomers (Bank.Api) in 3868.5924ms
+2025-02-14 01:46:39.071 +04:00 [INF] Executed endpoint 'CustomerController.GetCustomers (Bank.Api)'
+2025-02-14 01:46:39.085 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Customer - - - 200 - application/json;+charset=utf-8 4017.9586ms
+2025-02-14 01:47:25.030 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/User application/json 75
+2025-02-14 01:47:25.042 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:47:25.048 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api)'
+2025-02-14 01:47:25.070 +04:00 [INF] Route matched with {action = "RegisterUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUserAsync(Bank.Model.UserModel) on controller Bank.Api.Controllers.UserController (Bank.Api).
+2025-02-14 01:47:26.112 +04:00 [INF] Executed DbCommand (307ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 128), @p2='?' (Scale = 7) (DbType = DateTime2), @p3='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CustomerId], [Password], [RegistrationDate], [UserName])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-14 01:47:26.192 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-02-14 01:47:26.195 +04:00 [INF] Executed action Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api) in 1119.0362ms
+2025-02-14 01:47:26.197 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api)'
+2025-02-14 01:47:26.200 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/User application/json 75 - 204 - - 1170.2495ms
+2025-02-14 01:48:03.199 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 152
+2025-02-14 01:48:03.259 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:48:03.263 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:48:03.273 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-14 01:48:03.526 +04:00 [INF] Executed DbCommand (94ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Size = 25), @p5='?' (Size = 11), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-14 01:48:03.579 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.Customer'.
+2025-02-14 01:48:03.692 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 413.3046ms
+2025-02-14 01:48:03.694 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:48:03.697 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:48:03.785 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 152 - 500 - text/plain;+charset=utf-8 586.7079ms
+2025-02-14 01:48:59.488 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/User - -
+2025-02-14 01:48:59.491 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.UserController.GetUsers (Bank.Api)'
+2025-02-14 01:48:59.527 +04:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.User]] GetUsers() on controller Bank.Api.Controllers.UserController (Bank.Api).
+2025-02-14 01:48:59.541 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.User, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:48:59.690 +04:00 [INF] Executed DbCommand (133ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreateDate], [u].[CustomerId], [u].[IsDelete], [u].[Password], [u].[RegistrationDate], [u].[UserName]
+FROM [Users] AS [u]
+2025-02-14 01:48:59.727 +04:00 [INF] Executed action Bank.Api.Controllers.UserController.GetUsers (Bank.Api) in 188.002ms
+2025-02-14 01:48:59.737 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.UserController.GetUsers (Bank.Api)'
+2025-02-14 01:48:59.740 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/User - - - 200 - application/json;+charset=utf-8 251.5503ms
+2025-02-14 01:49:24.601 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/City - -
+2025-02-14 01:49:24.605 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.CityController.GetCities (Bank.Api)'
+2025-02-14 01:49:24.614 +04:00 [INF] Route matched with {action = "GetCities", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.City]] GetCities() on controller Bank.Api.Controllers.CityController (Bank.Api).
+2025-02-14 01:49:24.626 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.City, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:49:24.810 +04:00 [INF] Executed DbCommand (166ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateDate], [c].[IsDelete], [c].[Name]
+FROM [Cities] AS [c]
+2025-02-14 01:49:24.838 +04:00 [INF] Executed action Bank.Api.Controllers.CityController.GetCities (Bank.Api) in 216.7868ms
+2025-02-14 01:49:24.842 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.CityController.GetCities (Bank.Api)'
+2025-02-14 01:49:24.845 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/City - - - 200 - application/json;+charset=utf-8 243.9628ms
+2025-02-14 01:49:37.566 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 152
+2025-02-14 01:49:37.569 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:49:37.572 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:49:37.576 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-14 01:49:37.828 +04:00 [INF] Executed DbCommand (236ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Size = 25), @p5='?' (Size = 11), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-14 01:49:37.835 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.Customer'.
+2025-02-14 01:49:37.841 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 256.6884ms
+2025-02-14 01:49:37.846 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:49:37.853 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:49:37.913 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 152 - 500 - text/plain;+charset=utf-8 347.3147ms
+2025-02-14 01:49:45.899 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 152
+2025-02-14 01:49:45.912 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:49:45.918 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:49:45.922 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-14 01:49:46.451 +04:00 [INF] Executed DbCommand (519ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Size = 25), @p5='?' (Size = 11), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-14 01:49:46.460 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.Customer'.
+2025-02-14 01:49:46.466 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 537.478ms
+2025-02-14 01:49:46.474 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:49:46.477 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:49:46.537 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 152 - 500 - text/plain;+charset=utf-8 638.3125ms
+2025-02-14 01:50:38.280 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 160
+2025-02-14 01:50:38.282 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:50:38.284 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:50:38.286 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-14 01:50:38.526 +04:00 [INF] Executed DbCommand (230ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Size = 25), @p5='?' (Size = 11), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-14 01:50:38.538 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.Customer'.
+2025-02-14 01:50:38.541 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 248.7055ms
+2025-02-14 01:50:38.544 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:50:38.552 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:50:38.597 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 160 - 500 - text/plain;+charset=utf-8 316.3437ms
+2025-02-14 01:51:39.407 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Customer - -
+2025-02-14 01:51:39.411 +04:00 [INF] Executing endpoint 'CustomerController.GetCustomers (Bank.Api)'
+2025-02-14 01:51:39.413 +04:00 [INF] Route matched with {action = "GetCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Customer]] GetCustomers() on controller CustomerController (Bank.Api).
+2025-02-14 01:51:39.419 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Customer, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:51:39.431 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CityId], [c].[CreateDate], [c].[FirstName], [c].[Gender], [c].[IsDelete], [c].[LastName], [c].[PersonalNumber], [c].[Phone1], [c].[Phone2], [c].[UserId]
+FROM [Customers] AS [c]
+2025-02-14 01:51:39.487 +04:00 [INF] Executed action CustomerController.GetCustomers (Bank.Api) in 69.0553ms
+2025-02-14 01:51:39.500 +04:00 [INF] Executed endpoint 'CustomerController.GetCustomers (Bank.Api)'
+2025-02-14 01:51:39.502 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Customer - - - 200 - application/json;+charset=utf-8 94.7827ms
+2025-02-14 01:53:38.119 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 161
+2025-02-14 01:53:38.122 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:53:38.124 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:53:38.126 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-14 01:53:38.318 +04:00 [INF] Executed DbCommand (183ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Size = 25), @p5='?' (Size = 11), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-14 01:53:38.328 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.Customer'.
+2025-02-14 01:53:38.331 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 201.0216ms
+2025-02-14 01:53:38.334 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:53:38.343 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:53:38.400 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 161 - 500 - text/plain;+charset=utf-8 281.0231ms
+2025-02-14 01:53:51.072 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Customer - -
+2025-02-14 01:53:51.074 +04:00 [INF] Executing endpoint 'CustomerController.GetCustomers (Bank.Api)'
+2025-02-14 01:53:51.076 +04:00 [INF] Route matched with {action = "GetCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Customer]] GetCustomers() on controller CustomerController (Bank.Api).
+2025-02-14 01:53:51.082 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Customer, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:53:51.091 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CityId], [c].[CreateDate], [c].[FirstName], [c].[Gender], [c].[IsDelete], [c].[LastName], [c].[PersonalNumber], [c].[Phone1], [c].[Phone2], [c].[UserId]
+FROM [Customers] AS [c]
+2025-02-14 01:53:51.102 +04:00 [INF] Executed action CustomerController.GetCustomers (Bank.Api) in 21.3675ms
+2025-02-14 01:53:51.109 +04:00 [INF] Executed endpoint 'CustomerController.GetCustomers (Bank.Api)'
+2025-02-14 01:53:51.115 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Customer - - - 200 - application/json;+charset=utf-8 43.5569ms
+2025-02-14 01:54:17.390 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 161
+2025-02-14 01:54:17.392 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:54:17.394 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:54:17.397 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-14 01:54:17.425 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Size = 25), @p5='?' (Size = 11), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-14 01:54:17.462 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.Customer'.
+2025-02-14 01:54:17.465 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 58.1616ms
+2025-02-14 01:54:17.473 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-14 01:54:17.478 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:54:17.542 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 161 - 500 - text/plain;+charset=utf-8 152.0640ms
+2025-02-14 01:54:33.532 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Customer - -
+2025-02-14 01:54:33.533 +04:00 [INF] Executing endpoint 'CustomerController.GetCustomers (Bank.Api)'
+2025-02-14 01:54:33.536 +04:00 [INF] Route matched with {action = "GetCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Customer]] GetCustomers() on controller CustomerController (Bank.Api).
+2025-02-14 01:54:33.542 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Customer, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:54:33.549 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CityId], [c].[CreateDate], [c].[FirstName], [c].[Gender], [c].[IsDelete], [c].[LastName], [c].[PersonalNumber], [c].[Phone1], [c].[Phone2], [c].[UserId]
+FROM [Customers] AS [c]
+2025-02-14 01:54:33.556 +04:00 [INF] Executed action CustomerController.GetCustomers (Bank.Api) in 15.1867ms
+2025-02-14 01:54:33.572 +04:00 [INF] Executed endpoint 'CustomerController.GetCustomers (Bank.Api)'
+2025-02-14 01:54:33.578 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Customer - - - 200 - application/json;+charset=utf-8 45.8789ms
+2025-02-14 01:55:23.294 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Customer - -
+2025-02-14 01:55:23.296 +04:00 [INF] Executing endpoint 'CustomerController.GetCustomers (Bank.Api)'
+2025-02-14 01:55:23.300 +04:00 [INF] Route matched with {action = "GetCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Customer]] GetCustomers() on controller CustomerController (Bank.Api).
+2025-02-14 01:55:23.307 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Customer, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:55:23.618 +04:00 [INF] Executed DbCommand (305ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CityId], [c].[CreateDate], [c].[FirstName], [c].[Gender], [c].[IsDelete], [c].[LastName], [c].[PersonalNumber], [c].[Phone1], [c].[Phone2], [c].[UserId]
+FROM [Customers] AS [c]
+2025-02-14 01:55:23.625 +04:00 [INF] Executed action CustomerController.GetCustomers (Bank.Api) in 320.3258ms
+2025-02-14 01:55:23.629 +04:00 [INF] Executed endpoint 'CustomerController.GetCustomers (Bank.Api)'
+2025-02-14 01:55:23.634 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Customer - - - 200 - application/json;+charset=utf-8 340.3696ms
+2025-02-14 01:56:55.710 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Card application/json 150
+2025-02-14 01:56:55.714 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:56:55.716 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.CardController.CreateCardAsync (Bank.Api)'
+2025-02-14 01:56:55.732 +04:00 [INF] Route matched with {action = "CreateCard", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCardAsync(Bank.Model.CardModel) on controller Bank.Api.Controllers.CardController (Bank.Api).
+2025-02-14 01:56:56.258 +04:00 [INF] Executed DbCommand (354ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4), @p2='?' (DbType = Date), @p3='?' (Size = 20), @p4='?' (Size = 100), @p5='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CreditCards] ([AccountId], [Cvc], [ExpirationDate], [Number], [Owner], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-02-14 01:56:56.275 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.Card'.
+2025-02-14 01:56:56.282 +04:00 [INF] Executed action Bank.Api.Controllers.CardController.CreateCardAsync (Bank.Api) in 543.1427ms
+2025-02-14 01:56:56.285 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.CardController.CreateCardAsync (Bank.Api)'
+2025-02-14 01:56:56.287 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:56:56.324 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Card application/json 150 - 500 - text/plain;+charset=utf-8 613.5768ms
+2025-02-14 01:57:09.875 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Card - -
+2025-02-14 01:57:09.884 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.CardController.GetCards (Bank.Api)'
+2025-02-14 01:57:09.898 +04:00 [INF] Route matched with {action = "GetCards", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Card]] GetCards() on controller Bank.Api.Controllers.CardController (Bank.Api).
+2025-02-14 01:57:09.908 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Card, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:57:09.990 +04:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccountId], [c].[CreateDate], [c].[Cvc], [c].[ExpirationDate], [c].[IsDelete], [c].[Number], [c].[Owner], [c].[Type]
+FROM [CreditCards] AS [c]
+2025-02-14 01:57:10.003 +04:00 [INF] Executed action Bank.Api.Controllers.CardController.GetCards (Bank.Api) in 97.4972ms
+2025-02-14 01:57:10.006 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.CardController.GetCards (Bank.Api)'
+2025-02-14 01:57:10.008 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Card - - - 200 - application/json;+charset=utf-8 132.7140ms
+2025-02-14 01:58:12.411 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account application/json 96
+2025-02-14 01:58:12.430 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:58:12.432 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-14 01:58:12.444 +04:00 [INF] Route matched with {action = "CreateAccount", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAccountAsync(Bank.Model.AccountModel) on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-14 01:58:13.183 +04:00 [INF] Executed DbCommand (571ms) [Parameters=[@p0='?' (DbType = Currency), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Accounts] ([Amount], [CustomerId], [IBAN], [Status])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-14 01:58:13.201 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.Account'.
+2025-02-14 01:58:13.203 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api) in 739.0988ms
+2025-02-14 01:58:13.205 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-14 01:58:13.210 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:58:13.249 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account application/json 96 - 500 - text/plain;+charset=utf-8 838.3298ms
+2025-02-14 01:58:23.802 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Account - -
+2025-02-14 01:58:23.804 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-14 01:58:23.846 +04:00 [INF] Route matched with {action = "GetAccounts", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Account]] GetAccounts() on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-14 01:58:23.863 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Account, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:58:23.911 +04:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Amount], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+2025-02-14 01:58:24.179 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Bank.Repository.BankDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method507(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method507(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-02-14 01:58:24.221 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api) in 359.8018ms
+2025-02-14 01:58:24.228 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-14 01:58:24.232 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method507(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnTryWrite(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:58:24.466 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Account - - - 500 - text/plain;+charset=utf-8 664.4370ms
+2025-02-14 01:58:46.866 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account application/json 92
+2025-02-14 01:58:46.869 +04:00 [INF] CORS policy execution successful.
+2025-02-14 01:58:46.871 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-14 01:58:46.874 +04:00 [INF] Route matched with {action = "CreateAccount", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAccountAsync(Bank.Model.AccountModel) on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-14 01:58:47.048 +04:00 [INF] Executed DbCommand (157ms) [Parameters=[@p0='?' (DbType = Currency), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Accounts] ([Amount], [CustomerId], [IBAN], [Status])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-14 01:58:47.221 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'Bank.Repository.BankDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Accounts' with unique index 'IX_Accounts_IBAN'. The duplicate key value is (59454854154154).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:41069d0b-05e7-4449-bae0-d2b64a8e54ce
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Accounts' with unique index 'IX_Accounts_IBAN'. The duplicate key value is (59454854154154).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:41069d0b-05e7-4449-bae0-d2b64a8e54ce
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-14 01:58:47.300 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api) in 416.1307ms
+2025-02-14 01:58:47.303 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-14 01:58:47.308 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Accounts' with unique index 'IX_Accounts_IBAN'. The duplicate key value is (59454854154154).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:41069d0b-05e7-4449-bae0-d2b64a8e54ce
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Bank.Repository.UnitOfWork.SaveChangesAsync() in D:\AllProgramming\Bank\Bank.Repository\UnitOfWork.cs:line 39
+   at Bank.Service.AccountService.CreateAccountAsync(Account account) in D:\AllProgramming\Bank\Bank.Service\AccountService.cs:line 102
+   at Bank.Api.Controllers.AccountController.CreateAccountAsync(AccountModel accountModel) in D:\AllProgramming\Bank\Bank.Api\Controllers\AccountController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:58:47.684 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account application/json 92 - 500 - text/plain;+charset=utf-8 817.8539ms
+2025-02-14 01:59:15.580 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Account - -
+2025-02-14 01:59:15.582 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-14 01:59:15.585 +04:00 [INF] Route matched with {action = "GetAccounts", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Account]] GetAccounts() on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-14 01:59:15.634 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Account, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 01:59:15.645 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Amount], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+2025-02-14 01:59:15.651 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Bank.Repository.BankDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method507(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method507(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-02-14 01:59:15.663 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api) in 29.6031ms
+2025-02-14 01:59:15.664 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-14 01:59:15.666 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method507(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnTryWrite(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 01:59:15.713 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Account - - - 500 - text/plain;+charset=utf-8 133.7393ms
+2025-02-14 02:01:20.519 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account application/json 85
+2025-02-14 02:01:20.522 +04:00 [INF] CORS policy execution successful.
+2025-02-14 02:01:20.525 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-14 02:01:20.528 +04:00 [INF] Route matched with {action = "CreateAccount", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAccountAsync(Bank.Model.AccountModel) on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-14 02:01:20.786 +04:00 [INF] Executed DbCommand (240ms) [Parameters=[@p0='?' (DbType = Currency), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Accounts] ([Amount], [CustomerId], [IBAN], [Status])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-14 02:01:20.793 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.Account'.
+2025-02-14 02:01:20.797 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api) in 254.4552ms
+2025-02-14 02:01:20.803 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-14 02:01:20.806 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 02:01:20.841 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account application/json 85 - 500 - text/plain;+charset=utf-8 322.3582ms
+2025-02-14 02:01:35.347 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Account - -
+2025-02-14 02:01:35.349 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-14 02:01:35.352 +04:00 [INF] Route matched with {action = "GetAccounts", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Account]] GetAccounts() on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-14 02:01:35.393 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Account, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-14 02:01:35.407 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Amount], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+2025-02-14 02:01:35.412 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Bank.Repository.BankDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method507(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method507(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-02-14 02:01:35.426 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api) in 33.792ms
+2025-02-14 02:01:35.428 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-14 02:01:35.430 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method507(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnTryWrite(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-14 02:01:35.472 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Account - - - 500 - text/plain;+charset=utf-8 124.5589ms
+2025-02-14 02:05:55.390 +04:00 [INF] Application is shutting down...

@@ -1,0 +1,135 @@
+2025-02-16 20:49:51.690 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:51.755 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:51.756 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:51.756 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:51.756 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:51.756 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:53.189 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:53.189 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:53.189 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:53.189 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:53.189 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:53.189 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-16 20:49:55.275 +04:00 [INF] Executed DbCommand (1,906ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [TestBase];
+2025-02-16 20:49:55.931 +04:00 [INF] Executed DbCommand (648ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [TestBase] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2025-02-16 20:49:55.980 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-16 20:49:56.348 +04:00 [INF] Executed DbCommand (185ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2025-02-16 20:49:56.352 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-16 20:49:56.414 +04:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-16 20:49:56.534 +04:00 [INF] Executed DbCommand (113ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-16 20:49:56.598 +04:00 [INF] Applying migration '20250216164418_InitialCreate'.
+2025-02-16 20:49:56.688 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Cities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(20) NOT NULL,
+    [CreateDate] date NOT NULL DEFAULT (GetDate()),
+    [IsDelete] bit NOT NULL DEFAULT ((0)),
+    CONSTRAINT [PK_Cities] PRIMARY KEY ([Id])
+);
+2025-02-16 20:49:56.699 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL IDENTITY,
+    [UserName] nvarchar(30) NOT NULL,
+    [Password] nvarchar(128) NOT NULL,
+    [RegistrationDate] datetime2(7) NOT NULL,
+    [CreateDate] date NOT NULL DEFAULT (GetDate()),
+    [IsDelete] bit NOT NULL DEFAULT ((0)),
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+);
+2025-02-16 20:49:56.704 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Customers] (
+    [Id] int NOT NULL IDENTITY,
+    [FirstName] nvarchar(25) NOT NULL,
+    [LastName] nvarchar(25) NOT NULL,
+    [Gender] nvarchar(10) NOT NULL,
+    [Address] nvarchar(75) NOT NULL,
+    [Phone1] nvarchar(15) NULL,
+    [Phone2] nvarchar(15) NULL,
+    [PersonalNumber] nvarchar(9) NOT NULL,
+    [CreateDate] date NOT NULL DEFAULT (GetDate()),
+    [IsDelete] bit NOT NULL DEFAULT ((0)),
+    [UserId] int NULL,
+    [CityId] int NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Customers_Cities_CityId] FOREIGN KEY ([CityId]) REFERENCES [Cities] ([Id]),
+    CONSTRAINT [FK_Customers_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id])
+);
+2025-02-16 20:49:56.707 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Accounts] (
+    [Id] int NOT NULL IDENTITY,
+    [Status] nvarchar(10) NOT NULL,
+    [IBAN] nvarchar(34) NOT NULL,
+    [Amount] money NOT NULL,
+    [CreateDate] date NOT NULL DEFAULT (GetDate()),
+    [IsDelete] bit NOT NULL DEFAULT ((0)),
+    [CustomerId] int NULL,
+    CONSTRAINT [PK_Accounts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Accounts_Customers_CustomerId] FOREIGN KEY ([CustomerId]) REFERENCES [Customers] ([Id])
+);
+2025-02-16 20:49:56.711 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CreditCards] (
+    [Id] int NOT NULL IDENTITY,
+    [Owner] nvarchar(100) NOT NULL,
+    [Type] nvarchar(10) NOT NULL,
+    [Number] nvarchar(20) NOT NULL,
+    [Cvc] nvarchar(4) NOT NULL,
+    [ExpirationDate] date NOT NULL,
+    [CreateDate] date NOT NULL DEFAULT (GetDate()),
+    [IsDelete] bit NOT NULL DEFAULT ((0)),
+    [AccountId] int NULL,
+    CONSTRAINT [PK_CreditCards] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_CreditCards_Accounts_AccountId] FOREIGN KEY ([AccountId]) REFERENCES [Accounts] ([Id])
+);
+2025-02-16 20:49:56.718 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Transactions] (
+    [Id] int NOT NULL IDENTITY,
+    [Amount] money NOT NULL,
+    [Type] nvarchar(10) NOT NULL,
+    [Date] datetime2(7) NOT NULL,
+    [AccountId] int NULL,
+    [CardId] int NULL,
+    [CreateDate] date NOT NULL DEFAULT (GetDate()),
+    [IsDelete] bit NOT NULL DEFAULT ((0)),
+    CONSTRAINT [PK_Transactions] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Transactions_Accounts_AccountId] FOREIGN KEY ([AccountId]) REFERENCES [Accounts] ([Id]),
+    CONSTRAINT [FK_Transactions_CreditCards_CardId] FOREIGN KEY ([CardId]) REFERENCES [CreditCards] ([Id])
+);
+2025-02-16 20:49:56.760 +04:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Accounts_CustomerId] ON [Accounts] ([CustomerId]);
+2025-02-16 20:49:56.762 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Accounts_IBAN] ON [Accounts] ([IBAN]);
+2025-02-16 20:49:56.763 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Cities_Name] ON [Cities] ([Name]);
+2025-02-16 20:49:56.764 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_CreditCards_AccountId] ON [CreditCards] ([AccountId]);
+2025-02-16 20:49:56.775 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_CreditCards_Number_Cvc] ON [CreditCards] ([Number], [Cvc]);
+2025-02-16 20:49:56.778 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Customers_CityId] ON [Customers] ([CityId]);
+2025-02-16 20:49:56.798 +04:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Customers_UserId] ON [Customers] ([UserId]) WHERE [UserId] IS NOT NULL;
+2025-02-16 20:49:56.800 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Transactions_AccountId] ON [Transactions] ([AccountId]);
+2025-02-16 20:49:56.821 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Transactions_CardId] ON [Transactions] ([CardId]);
+2025-02-16 20:49:56.822 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Users_UserName] ON [Users] ([UserName]);
+2025-02-16 20:49:56.850 +04:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250216164418_InitialCreate', N'7.0.14');

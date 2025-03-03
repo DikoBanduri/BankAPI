@@ -1,0 +1,64 @@
+2025-02-27 20:33:57.288 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-27 20:33:57.401 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-27 20:33:57.403 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-27 20:33:57.403 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-27 20:33:57.404 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-27 20:33:57.404 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-27 20:34:04.424 +04:00 [INF] Executed DbCommand (90ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-27 20:34:04.664 +04:00 [INF] Executed DbCommand (177ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-27 20:34:04.690 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-27 20:34:04.699 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-27 20:34:05.398 +04:00 [INF] Executed DbCommand (617ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-27 20:34:05.568 +04:00 [INF] Applying migration '20250227163330_InitialCreate'.
+2025-02-27 20:34:06.958 +04:00 [ERR] Failed executing DbCommand (976ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Cities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(20) NOT NULL,
+    [CreateDate] date NOT NULL DEFAULT (GetDate()),
+    [IsDelete] bit NOT NULL DEFAULT ((0)),
+    CONSTRAINT [PK_Cities] PRIMARY KEY ([Id])
+);
+2025-02-27 20:35:25.892 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-27 20:35:26.050 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-27 20:35:26.384 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-27 20:35:26.397 +04:00 [INF] Hosting environment: Development
+2025-02-27 20:35:26.399 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-27 20:35:26.603 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 560.9442ms
+2025-02-27 20:35:26.710 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-27 20:35:26.714 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-27 20:35:26.719 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 4.6691ms
+2025-02-27 20:35:26.795 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.1591ms
+2025-02-27 20:35:27.252 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-27 20:35:27.508 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Transaction" for actions - Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api),Bank.Api.Controllers.TransactionController.Transfer (Bank.Api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-27 20:35:27.696 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 500 - text/plain;+charset=utf-8 443.7010ms
+2025-02-27 20:36:10.729 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-27 20:36:10.761 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 31.3338ms
+2025-02-27 20:36:10.862 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-27 20:36:10.863 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-27 20:36:10.867 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 4.4764ms
+2025-02-27 20:36:10.923 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.5079ms
+2025-02-27 20:36:11.160 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-27 20:36:11.190 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Transaction" for actions - Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api),Bank.Api.Controllers.TransactionController.Transfer (Bank.Api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-27 20:36:11.206 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 500 - text/plain;+charset=utf-8 42.8016ms
+2025-02-27 20:37:06.215 +04:00 [INF] Application is shutting down...

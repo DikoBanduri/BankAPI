@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "1TDyAux3xCBoNuyiqZHoZucr8I0X0thPUNYkfIfHjufLD4o5IHLw7oOVsglTREbIPKm7T0Bv7NdTcHZmUg3ukw==",
+  "success": true,
+  "projectFilePath": "D:\\AllProgramming\\Bank\\Bank.Extension\\Bank.Extension.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dikob\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.31\\microsoft.windowsdesktop.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\dikob\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.31\\microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\dikob\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.31\\microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}

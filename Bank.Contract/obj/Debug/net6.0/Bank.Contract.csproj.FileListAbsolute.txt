@@ -1,0 +1,11 @@
+D:\AllProgramming\Bank\Bank.Contract\bin\Debug\net6.0\Bank.Contract.deps.json
+D:\AllProgramming\Bank\Bank.Contract\bin\Debug\net6.0\Bank.Contract.dll
+D:\AllProgramming\Bank\Bank.Contract\bin\Debug\net6.0\Bank.Contract.pdb
+D:\AllProgramming\Bank\Bank.Contract\obj\Debug\net6.0\Bank.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllProgramming\Bank\Bank.Contract\obj\Debug\net6.0\Bank.Contract.AssemblyInfoInputs.cache
+D:\AllProgramming\Bank\Bank.Contract\obj\Debug\net6.0\Bank.Contract.AssemblyInfo.cs
+D:\AllProgramming\Bank\Bank.Contract\obj\Debug\net6.0\Bank.Contract.csproj.CoreCompileInputs.cache
+D:\AllProgramming\Bank\Bank.Contract\obj\Debug\net6.0\Bank.Contract.dll
+D:\AllProgramming\Bank\Bank.Contract\obj\Debug\net6.0\refint\Bank.Contract.dll
+D:\AllProgramming\Bank\Bank.Contract\obj\Debug\net6.0\Bank.Contract.pdb
+D:\AllProgramming\Bank\Bank.Contract\obj\Debug\net6.0\ref\Bank.Contract.dll

@@ -1,0 +1,15 @@
+D:\AllProgramming\Bank\Bank.Logger\bin\Debug\net6.0\Bank.Logger.deps.json
+D:\AllProgramming\Bank\Bank.Logger\bin\Debug\net6.0\Bank.Logger.dll
+D:\AllProgramming\Bank\Bank.Logger\bin\Debug\net6.0\Bank.Logger.pdb
+D:\AllProgramming\Bank\Bank.Logger\bin\Debug\net6.0\Bank.Contract.dll
+D:\AllProgramming\Bank\Bank.Logger\bin\Debug\net6.0\Bank.Contract.pdb
+D:\AllProgramming\Bank\Bank.Logger\obj\Debug\net6.0\Bank.Logger.csproj.AssemblyReference.cache
+D:\AllProgramming\Bank\Bank.Logger\obj\Debug\net6.0\Bank.Logger.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllProgramming\Bank\Bank.Logger\obj\Debug\net6.0\Bank.Logger.AssemblyInfoInputs.cache
+D:\AllProgramming\Bank\Bank.Logger\obj\Debug\net6.0\Bank.Logger.AssemblyInfo.cs
+D:\AllProgramming\Bank\Bank.Logger\obj\Debug\net6.0\Bank.Logger.csproj.CoreCompileInputs.cache
+D:\AllProgramming\Bank\Bank.Logger\obj\Debug\net6.0\Bank.Log.EC21355F.Up2Date
+D:\AllProgramming\Bank\Bank.Logger\obj\Debug\net6.0\Bank.Logger.dll
+D:\AllProgramming\Bank\Bank.Logger\obj\Debug\net6.0\refint\Bank.Logger.dll
+D:\AllProgramming\Bank\Bank.Logger\obj\Debug\net6.0\Bank.Logger.pdb
+D:\AllProgramming\Bank\Bank.Logger\obj\Debug\net6.0\ref\Bank.Logger.dll

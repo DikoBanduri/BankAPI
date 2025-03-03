@@ -1,0 +1,955 @@
+2025-02-25 22:47:25.058 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 106
+2025-02-26 00:21:25.369 +04:00 [INF] CORS policy execution successful.
+2025-02-26 00:21:25.706 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:21:26.550 +04:00 [INF] Route matched with {action = "Transfer", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Transfer(Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 00:21:43.306 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-26 00:21:43.748 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-26 00:21:43.750 +04:00 [INF] Hosting environment: Development
+2025-02-26 00:21:43.752 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-26 00:21:47.252 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-26 00:21:48.149 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 901.7532ms
+2025-02-26 00:21:48.283 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-26 00:21:48.338 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.7482ms
+2025-02-26 00:21:48.393 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-26 00:21:48.397 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 4.0634ms
+2025-02-26 00:21:48.874 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-26 00:21:49.144 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 269.9109ms
+2025-02-26 00:22:34.488 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 106
+2025-02-26 00:22:34.502 +04:00 [INF] CORS policy execution successful.
+2025-02-26 00:22:34.543 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:22:34.598 +04:00 [INF] Route matched with {action = "Transfer", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Transfer(Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 00:22:37.545 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:22:37.547 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:22:37.549 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:22:37.552 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:22:37.557 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:22:37.560 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:22:41.713 +04:00 [INF] Executed DbCommand (440ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:22:41.926 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:22:42.328 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:22:42.769 +04:00 [INF] Executed DbCommand (425ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Currency), @p3='?' (DbType = Int32), @p2='?' (DbType = Currency), @p4='?' (DbType = Int32), @p5='?' (DbType = Currency), @p6='?' (DbType = Int32), @p7='?' (Scale = 7) (DbType = DateTime2), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (DbType = Int32), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+UPDATE [Accounts] SET [Balance] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [DestinationAccount], [SourceAccount], [Status], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-02-26 00:22:43.320 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'Bank.Repository.BankDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'AccountId', table 'TestBase.dbo.Transactions'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:fb9aedf8-20aa-417c-9660-2fbf353a1653
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'AccountId', table 'TestBase.dbo.Transactions'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:fb9aedf8-20aa-417c-9660-2fbf353a1653
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-26 00:22:43.538 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.Transfer (Bank.Api) in 8917.3435ms
+2025-02-26 00:22:43.564 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:22:43.594 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'AccountId', table 'TestBase.dbo.Transactions'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:fb9aedf8-20aa-417c-9660-2fbf353a1653
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Bank.Repository.UnitOfWork.SaveChangesAsync() in D:\AllProgramming\Bank\Bank.Repository\UnitOfWork.cs:line 40
+   at Bank.Service.TransactionService.CreateTransactionAsync(Transaction transaction) in D:\AllProgramming\Bank\Bank.Service\TransactionService.cs:line 38
+   at Bank.Service.TransactionService.TransferAsync(Int32 sourceAccount, Int32 destinationAccount, Decimal amount) in D:\AllProgramming\Bank\Bank.Service\TransactionService.cs:line 73
+   at Bank.Api.Controllers.TransactionController.Transfer(TransactionModel transaction) in D:\AllProgramming\Bank\Bank.Api\Controllers\TransactionController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-26 00:22:44.193 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 106 - 500 - text/plain;+charset=utf-8 9704.9927ms
+2025-02-26 00:24:41.452 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-26 00:24:41.701 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-26 00:24:41.813 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-26 00:24:41.834 +04:00 [INF] Hosting environment: Development
+2025-02-26 00:24:41.836 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-26 00:24:42.039 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 345.6341ms
+2025-02-26 00:24:42.116 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-26 00:24:42.121 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-26 00:24:42.122 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 6.0335ms
+2025-02-26 00:24:42.188 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.5026ms
+2025-02-26 00:24:42.284 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-26 00:24:42.769 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 484.9050ms
+2025-02-26 00:25:19.475 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 124
+2025-02-26 00:25:19.488 +04:00 [INF] CORS policy execution successful.
+2025-02-26 00:25:19.537 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:25:19.616 +04:00 [INF] Route matched with {action = "Transfer", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Transfer(Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 00:25:21.760 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:25:21.764 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:25:21.766 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:25:21.768 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:25:21.770 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:25:21.773 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:25:24.029 +04:00 [INF] Executed DbCommand (422ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:25:24.268 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:25:24.712 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:25:24.935 +04:00 [INF] Executed DbCommand (206ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Currency), @p3='?' (DbType = Int32), @p2='?' (DbType = Currency), @p4='?' (DbType = Int32), @p5='?' (DbType = Currency), @p6='?' (DbType = Int32), @p7='?' (Scale = 7) (DbType = DateTime2), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (DbType = Int32), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+UPDATE [Accounts] SET [Balance] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [DestinationAccount], [SourceAccount], [Status], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-02-26 00:25:25.065 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'Bank.Repository.BankDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'AccountId', table 'TestBase.dbo.Transactions'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a66f18ca-f817-4b3b-b325-636b51c53f6c
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'AccountId', table 'TestBase.dbo.Transactions'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a66f18ca-f817-4b3b-b325-636b51c53f6c
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-26 00:25:25.191 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.Transfer (Bank.Api) in 5553.762ms
+2025-02-26 00:25:25.203 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:25:25.216 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'AccountId', table 'TestBase.dbo.Transactions'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a66f18ca-f817-4b3b-b325-636b51c53f6c
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Bank.Repository.UnitOfWork.SaveChangesAsync() in D:\AllProgramming\Bank\Bank.Repository\UnitOfWork.cs:line 40
+   at Bank.Service.TransactionService.CreateTransactionAsync(Transaction transaction) in D:\AllProgramming\Bank\Bank.Service\TransactionService.cs:line 38
+   at Bank.Service.TransactionService.TransferAsync(Int32 sourceAccount, Int32 destinationAccount, Decimal amount) in D:\AllProgramming\Bank\Bank.Service\TransactionService.cs:line 73
+   at Bank.Api.Controllers.TransactionController.Transfer(TransactionModel transaction) in D:\AllProgramming\Bank\Bank.Api\Controllers\TransactionController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-26 00:25:25.582 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 124 - 500 - text/plain;+charset=utf-8 6106.0007ms
+2025-02-26 00:25:54.122 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-26 00:25:54.378 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-26 00:25:54.381 +04:00 [INF] Hosting environment: Development
+2025-02-26 00:25:54.382 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-26 00:25:54.698 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-26 00:25:54.980 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 290.0763ms
+2025-02-26 00:25:55.050 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-26 00:25:55.057 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-26 00:25:55.058 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 7.4824ms
+2025-02-26 00:25:55.134 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 76.4947ms
+2025-02-26 00:25:55.249 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-26 00:25:55.533 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 284.6387ms
+2025-02-26 00:26:52.317 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 124
+2025-02-26 00:26:52.330 +04:00 [INF] CORS policy execution successful.
+2025-02-26 00:26:52.380 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:26:52.456 +04:00 [INF] Route matched with {action = "Transfer", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Transfer(Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 00:26:54.472 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:26:54.477 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:26:54.479 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:26:54.481 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:26:54.483 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:26:54.486 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:26:56.759 +04:00 [INF] Executed DbCommand (411ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:26:56.966 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:26:57.372 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:26:57.551 +04:00 [INF] Executed DbCommand (165ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Currency), @p3='?' (DbType = Int32), @p2='?' (DbType = Currency), @p4='?' (DbType = Int32), @p5='?' (DbType = Currency), @p6='?' (DbType = Int32), @p7='?' (Scale = 7) (DbType = DateTime2), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (DbType = Int32), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+UPDATE [Accounts] SET [Balance] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [DestinationAccount], [SourceAccount], [Status], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-02-26 00:26:57.660 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'Bank.Repository.BankDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transactions_Accounts_AccountId". The conflict occurred in database "TestBase", table "dbo.Accounts", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6ff24318-6006-4daf-8cbf-6e7b600ee7d0
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transactions_Accounts_AccountId". The conflict occurred in database "TestBase", table "dbo.Accounts", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6ff24318-6006-4daf-8cbf-6e7b600ee7d0
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-26 00:26:57.763 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.Transfer (Bank.Api) in 5293.0436ms
+2025-02-26 00:26:57.768 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:26:57.774 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transactions_Accounts_AccountId". The conflict occurred in database "TestBase", table "dbo.Accounts", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6ff24318-6006-4daf-8cbf-6e7b600ee7d0
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Bank.Repository.UnitOfWork.SaveChangesAsync() in D:\AllProgramming\Bank\Bank.Repository\UnitOfWork.cs:line 40
+   at Bank.Service.TransactionService.CreateTransactionAsync(Transaction transaction) in D:\AllProgramming\Bank\Bank.Service\TransactionService.cs:line 38
+   at Bank.Service.TransactionService.TransferAsync(Int32 sourceAccount, Int32 destinationAccount, Decimal amount) in D:\AllProgramming\Bank\Bank.Service\TransactionService.cs:line 73
+   at Bank.Api.Controllers.TransactionController.Transfer(TransactionModel transaction) in D:\AllProgramming\Bank\Bank.Api\Controllers\TransactionController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-26 00:26:57.938 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 124 - 500 - text/plain;+charset=utf-8 5621.1526ms
+2025-02-26 00:30:49.118 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-26 00:30:49.461 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-26 00:30:49.463 +04:00 [INF] Hosting environment: Development
+2025-02-26 00:30:49.465 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-26 00:30:49.724 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-26 00:30:50.119 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 406.6911ms
+2025-02-26 00:30:50.190 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-26 00:30:50.201 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 10.6347ms
+2025-02-26 00:30:50.205 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-26 00:30:50.348 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 142.9684ms
+2025-02-26 00:30:50.503 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-26 00:30:50.816 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 313.2225ms
+2025-02-26 00:31:36.527 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 121
+2025-02-26 00:31:36.546 +04:00 [INF] CORS policy execution successful.
+2025-02-26 00:31:36.601 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:31:36.680 +04:00 [INF] Route matched with {action = "Transfer", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Transfer(Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 00:31:39.002 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:31:39.007 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:31:39.011 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:31:39.014 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:31:39.017 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:31:39.019 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:31:41.872 +04:00 [INF] Executed DbCommand (409ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:31:42.228 +04:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:31:42.929 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:31:43.072 +04:00 [INF] Executed DbCommand (113ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Currency), @p3='?' (DbType = Int32), @p2='?' (DbType = Currency), @p4='?' (DbType = Int32), @p5='?' (DbType = Currency), @p6='?' (DbType = Int32), @p7='?' (Scale = 7) (DbType = DateTime2), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (DbType = Int32), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+UPDATE [Accounts] SET [Balance] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [DestinationAccount], [SourceAccount], [Status], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-02-26 00:31:43.311 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:31:43.361 +04:00 [INF] Executed DbCommand (46ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Currency), @p1='?' (DbType = Date), @p2='?' (DbType = Int32), @p3='?' (Size = 34), @p4='?' (DbType = Boolean), @p5='?' (Size = 10), @p13='?' (DbType = Int32), @p7='?' (DbType = Currency), @p8='?' (DbType = Date), @p9='?' (DbType = Int32), @p10='?' (Size = 34), @p11='?' (DbType = Boolean), @p12='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0, [CreateDate] = @p1, [CustomerId] = @p2, [IBAN] = @p3, [IsDelete] = @p4, [Status] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+UPDATE [Accounts] SET [Balance] = @p7, [CreateDate] = @p8, [CustomerId] = @p9, [IBAN] = @p10, [IsDelete] = @p11, [Status] = @p12
+OUTPUT 1
+WHERE [Id] = @p13;
+2025-02-26 00:31:43.420 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-26 00:31:43.460 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.Transfer (Bank.Api) in 6760.2483ms
+2025-02-26 00:31:43.464 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:31:43.482 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 121 - 200 - application/json;+charset=utf-8 6955.3758ms
+2025-02-26 00:32:12.041 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Transaction - -
+2025-02-26 00:32:12.049 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api)'
+2025-02-26 00:32:12.068 +04:00 [INF] Route matched with {action = "GetTransactions", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Transaction]] GetTransactions() on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 00:32:12.085 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Transaction, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-26 00:32:12.357 +04:00 [INF] Executed DbCommand (168ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccountId], [t].[Amount], [t].[CardId], [t].[CreateDate], [t].[Date], [t].[DestinationAccount], [t].[IsDelete], [t].[SourceAccount], [t].[Status], [t].[Type]
+FROM [Transactions] AS [t]
+2025-02-26 00:32:12.393 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api) in 314.8711ms
+2025-02-26 00:32:12.398 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api)'
+2025-02-26 00:32:12.403 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Transaction - - - 200 - application/json;+charset=utf-8 362.1467ms
+2025-02-26 00:35:43.274 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-26 00:35:43.569 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-26 00:35:43.572 +04:00 [INF] Hosting environment: Development
+2025-02-26 00:35:43.574 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-26 00:35:43.863 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-26 00:35:44.290 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 432.0348ms
+2025-02-26 00:35:44.367 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-26 00:35:44.373 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-26 00:35:44.373 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 5.7015ms
+2025-02-26 00:35:44.448 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.9591ms
+2025-02-26 00:35:44.671 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-26 00:35:44.974 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 303.2403ms
+2025-02-26 00:36:24.214 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 122
+2025-02-26 00:36:24.230 +04:00 [INF] CORS policy execution successful.
+2025-02-26 00:36:24.313 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:36:24.414 +04:00 [INF] Route matched with {action = "Transfer", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Transfer(Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 00:36:26.934 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:36:26.938 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:36:26.941 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:36:26.945 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:36:26.949 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:36:26.954 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:36:29.506 +04:00 [INF] Executed DbCommand (244ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:36:29.789 +04:00 [INF] Executed DbCommand (45ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:36:30.269 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:36:30.497 +04:00 [INF] Executed DbCommand (205ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Currency), @p3='?' (DbType = Int32), @p2='?' (DbType = Currency), @p4='?' (DbType = Int32), @p5='?' (DbType = Currency), @p6='?' (DbType = Int32), @p7='?' (Scale = 7) (DbType = DateTime2), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (DbType = Int32), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+UPDATE [Accounts] SET [Balance] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [DestinationAccount], [SourceAccount], [Status], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-02-26 00:36:30.617 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:36:30.669 +04:00 [INF] Executed DbCommand (47ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Currency), @p1='?' (DbType = Date), @p2='?' (DbType = Int32), @p3='?' (Size = 34), @p4='?' (DbType = Boolean), @p5='?' (Size = 10), @p13='?' (DbType = Int32), @p7='?' (DbType = Currency), @p8='?' (DbType = Date), @p9='?' (DbType = Int32), @p10='?' (Size = 34), @p11='?' (DbType = Boolean), @p12='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0, [CreateDate] = @p1, [CustomerId] = @p2, [IBAN] = @p3, [IsDelete] = @p4, [Status] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+UPDATE [Accounts] SET [Balance] = @p7, [CreateDate] = @p8, [CustomerId] = @p9, [IBAN] = @p10, [IsDelete] = @p11, [Status] = @p12
+OUTPUT 1
+WHERE [Id] = @p13;
+2025-02-26 00:36:30.740 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-26 00:36:30.762 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.Transfer (Bank.Api) in 6332.4274ms
+2025-02-26 00:36:30.767 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:36:30.784 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 122 - 200 - application/json;+charset=utf-8 6570.4158ms
+2025-02-26 00:40:32.809 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-26 00:40:33.170 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-26 00:40:33.173 +04:00 [INF] Hosting environment: Development
+2025-02-26 00:40:33.174 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-26 00:40:33.312 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-26 00:40:33.643 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 335.1293ms
+2025-02-26 00:40:33.723 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-26 00:40:33.727 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-26 00:40:33.733 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 6.2154ms
+2025-02-26 00:40:33.855 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 132.5997ms
+2025-02-26 00:40:33.921 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-26 00:40:34.203 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 282.3315ms
+2025-02-26 00:41:12.738 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 123
+2025-02-26 00:41:12.752 +04:00 [INF] CORS policy execution successful.
+2025-02-26 00:41:12.790 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:41:12.846 +04:00 [INF] Route matched with {action = "Transfer", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Transfer(Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 00:41:14.237 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:41:14.241 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:41:14.242 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:41:14.244 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:41:14.247 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:41:14.250 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:41:15.852 +04:00 [INF] Executed DbCommand (175ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:41:16.013 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:41:16.327 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:41:16.457 +04:00 [INF] Executed DbCommand (117ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Currency), @p3='?' (DbType = Int32), @p2='?' (DbType = Currency), @p4='?' (DbType = Int32), @p5='?' (DbType = Currency), @p6='?' (DbType = Int32), @p7='?' (Scale = 7) (DbType = DateTime2), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (DbType = Int32), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+UPDATE [Accounts] SET [Balance] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [DestinationAccount], [SourceAccount], [Status], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-02-26 00:41:16.677 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:41:16.708 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Currency), @p1='?' (DbType = Date), @p2='?' (DbType = Int32), @p3='?' (Size = 34), @p4='?' (DbType = Boolean), @p5='?' (Size = 10), @p13='?' (DbType = Int32), @p7='?' (DbType = Currency), @p8='?' (DbType = Date), @p9='?' (DbType = Int32), @p10='?' (Size = 34), @p11='?' (DbType = Boolean), @p12='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0, [CreateDate] = @p1, [CustomerId] = @p2, [IBAN] = @p3, [IsDelete] = @p4, [Status] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+UPDATE [Accounts] SET [Balance] = @p7, [CreateDate] = @p8, [CustomerId] = @p9, [IBAN] = @p10, [IsDelete] = @p11, [Status] = @p12
+OUTPUT 1
+WHERE [Id] = @p13;
+2025-02-26 00:41:16.807 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-26 00:41:16.845 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.Transfer (Bank.Api) in 3972.3477ms
+2025-02-26 00:41:16.852 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:41:16.868 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 123 - 200 - application/json;+charset=utf-8 4130.5991ms
+2025-02-26 00:47:39.908 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-26 00:47:40.629 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-26 00:47:40.631 +04:00 [INF] Hosting environment: Development
+2025-02-26 00:47:40.632 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-26 00:47:41.495 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-26 00:47:42.362 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 882.7547ms
+2025-02-26 00:47:42.834 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-26 00:47:42.835 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-26 00:47:42.847 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 13.0590ms
+2025-02-26 00:47:42.937 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 101.6137ms
+2025-02-26 00:47:43.389 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-26 00:47:44.348 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 958.2748ms
+2025-02-26 00:48:54.936 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 124
+2025-02-26 00:48:54.951 +04:00 [INF] CORS policy execution successful.
+2025-02-26 00:48:55.000 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:48:55.053 +04:00 [INF] Route matched with {action = "Transfer", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Transfer(Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 00:49:00.832 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:49:00.836 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:49:00.838 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:49:00.842 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:49:00.846 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:49:00.849 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 00:49:09.311 +04:00 [INF] Executed DbCommand (364ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:49:09.537 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 00:49:09.923 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:49:10.036 +04:00 [INF] Executed DbCommand (102ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Currency), @p3='?' (DbType = Int32), @p2='?' (DbType = Currency), @p4='?' (DbType = Int32), @p5='?' (DbType = Currency), @p6='?' (DbType = Int32), @p7='?' (Scale = 7) (DbType = DateTime2), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (DbType = Int32), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+UPDATE [Accounts] SET [Balance] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [DestinationAccount], [SourceAccount], [Status], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-02-26 00:49:10.216 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 00:49:10.295 +04:00 [INF] Executed DbCommand (73ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Currency), @p1='?' (DbType = Date), @p2='?' (DbType = Int32), @p3='?' (Size = 34), @p4='?' (DbType = Boolean), @p5='?' (Size = 10), @p13='?' (DbType = Int32), @p7='?' (DbType = Currency), @p8='?' (DbType = Date), @p9='?' (DbType = Int32), @p10='?' (Size = 34), @p11='?' (DbType = Boolean), @p12='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0, [CreateDate] = @p1, [CustomerId] = @p2, [IBAN] = @p3, [IsDelete] = @p4, [Status] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+UPDATE [Accounts] SET [Balance] = @p7, [CreateDate] = @p8, [CustomerId] = @p9, [IBAN] = @p10, [IsDelete] = @p11, [Status] = @p12
+OUTPUT 1
+WHERE [Id] = @p13;
+2025-02-26 00:49:10.428 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-26 00:49:10.459 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.Transfer (Bank.Api) in 15386.7685ms
+2025-02-26 00:49:10.464 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.Transfer (Bank.Api)'
+2025-02-26 00:49:10.479 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 124 - 200 - application/json;+charset=utf-8 15542.3109ms
+2025-02-26 00:49:19.583 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Transaction - -
+2025-02-26 00:49:19.587 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api)'
+2025-02-26 00:49:19.595 +04:00 [INF] Route matched with {action = "GetTransactions", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Transaction]] GetTransactions() on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 00:49:19.604 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Transaction, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-26 00:49:19.648 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccountId], [t].[Amount], [t].[CardId], [t].[CreateDate], [t].[Date], [t].[DestinationAccount], [t].[IsDelete], [t].[SourceAccount], [t].[Status], [t].[Type]
+FROM [Transactions] AS [t]
+2025-02-26 00:49:19.664 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api) in 64.1341ms
+2025-02-26 00:49:19.668 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api)'
+2025-02-26 00:49:19.669 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Transaction - - - 200 - application/json;+charset=utf-8 86.4080ms
+2025-02-26 00:49:33.272 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Account - -
+2025-02-26 00:49:33.314 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-26 00:49:33.320 +04:00 [INF] Route matched with {action = "GetAccounts", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Account]] GetAccounts() on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-26 00:49:33.456 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Account, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-26 00:49:33.558 +04:00 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+2025-02-26 00:49:33.593 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api) in 267.2857ms
+2025-02-26 00:49:33.596 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-26 00:49:33.598 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Account - - - 200 - application/json;+charset=utf-8 326.1163ms
+2025-02-26 01:01:21.838 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-26 01:01:22.160 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-26 01:01:22.196 +04:00 [INF] Hosting environment: Development
+2025-02-26 01:01:22.206 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-26 01:01:22.514 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-26 01:01:22.859 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 361.8108ms
+2025-02-26 01:01:22.946 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-26 01:01:22.951 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-26 01:01:22.958 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 12.5719ms
+2025-02-26 01:01:23.039 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 88.0322ms
+2025-02-26 01:01:23.306 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-26 01:01:23.594 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 287.5365ms
+2025-02-26 01:05:47.526 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction application/json 123
+2025-02-26 01:05:47.539 +04:00 [INF] CORS policy execution successful.
+2025-02-26 01:05:47.597 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api)'
+2025-02-26 01:05:47.723 +04:00 [INF] Route matched with {action = "CreateTransaction", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTransactionAsync(Int32, Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 01:05:49.844 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:05:49.848 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:05:49.852 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:05:49.857 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:05:49.863 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:05:49.867 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:05:51.998 +04:00 [INF] Executed DbCommand (330ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Currency), @p2='?' (DbType = Int32), @p3='?' (Scale = 7) (DbType = DateTime2), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (DbType = Int32), @p7='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [DestinationAccount], [SourceAccount], [Status], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-02-26 01:05:52.211 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.Transaction'.
+2025-02-26 01:05:52.269 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api) in 4533.0361ms
+2025-02-26 01:05:52.275 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api)'
+2025-02-26 01:05:52.287 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction application/json 123 - 200 - application/json;+charset=utf-8 4761.4860ms
+2025-02-26 01:06:09.382 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Transaction - -
+2025-02-26 01:06:09.387 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api)'
+2025-02-26 01:06:09.396 +04:00 [INF] Route matched with {action = "GetTransactions", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Transaction]] GetTransactions() on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 01:06:09.521 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Transaction, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-26 01:06:10.005 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccountId], [t].[Amount], [t].[CardId], [t].[CreateDate], [t].[Date], [t].[DestinationAccount], [t].[IsDelete], [t].[SourceAccount], [t].[Status], [t].[Type]
+FROM [Transactions] AS [t]
+2025-02-26 01:06:10.062 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api) in 661.025ms
+2025-02-26 01:06:10.065 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api)'
+2025-02-26 01:06:10.070 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Transaction - - - 200 - application/json;+charset=utf-8 687.2720ms
+2025-02-26 01:06:21.356 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Account - -
+2025-02-26 01:06:21.358 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-26 01:06:21.365 +04:00 [INF] Route matched with {action = "GetAccounts", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Account]] GetAccounts() on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-26 01:06:21.398 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Account, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-26 01:06:21.601 +04:00 [INF] Executed DbCommand (189ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+2025-02-26 01:06:21.811 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api) in 442.1875ms
+2025-02-26 01:06:21.818 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-26 01:06:21.824 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Account - - - 200 - application/json;+charset=utf-8 467.8313ms
+2025-02-26 01:08:10.107 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-26 01:08:10.410 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-26 01:08:10.416 +04:00 [INF] Hosting environment: Development
+2025-02-26 01:08:10.417 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-26 01:08:10.530 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-26 01:08:11.312 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 796.3046ms
+2025-02-26 01:08:11.360 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-26 01:08:11.373 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 11.9204ms
+2025-02-26 01:08:11.374 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-26 01:08:11.465 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.6292ms
+2025-02-26 01:08:11.825 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-26 01:08:12.122 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 296.8507ms
+2025-02-26 01:08:43.754 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction application/json 124
+2025-02-26 01:08:43.768 +04:00 [INF] CORS policy execution successful.
+2025-02-26 01:08:43.821 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api)'
+2025-02-26 01:08:43.905 +04:00 [INF] Route matched with {action = "CreateTransaction", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTransactionAsync(Int32, Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 01:08:46.040 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:08:46.044 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:08:46.048 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:08:46.052 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:08:46.055 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:08:46.059 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:08:47.851 +04:00 [INF] Executed DbCommand (315ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Currency), @p2='?' (DbType = Int32), @p3='?' (Scale = 7) (DbType = DateTime2), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (DbType = Int32), @p7='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [DestinationAccount], [SourceAccount], [Status], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-02-26 01:08:48.693 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'Bank.Repository.BankDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transactions_Accounts_AccountId". The conflict occurred in database "TestBase", table "dbo.Accounts", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:f9bd022b-3f84-49fa-ba50-37d049883769
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transactions_Accounts_AccountId". The conflict occurred in database "TestBase", table "dbo.Accounts", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:f9bd022b-3f84-49fa-ba50-37d049883769
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-26 01:08:48.857 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api) in 4930.6099ms
+2025-02-26 01:08:48.865 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api)'
+2025-02-26 01:08:48.877 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transactions_Accounts_AccountId". The conflict occurred in database "TestBase", table "dbo.Accounts", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:f9bd022b-3f84-49fa-ba50-37d049883769
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Bank.Repository.UnitOfWork.SaveChangesAsync() in D:\AllProgramming\Bank\Bank.Repository\UnitOfWork.cs:line 40
+   at Bank.Service.TransactionService.CreateTransactionAsync(Transaction transaction) in D:\AllProgramming\Bank\Bank.Service\TransactionService.cs:line 40
+   at Bank.Api.Controllers.TransactionController.CreateTransactionAsync(Int32 id, TransactionModel transactionModel) in D:\AllProgramming\Bank\Bank.Api\Controllers\TransactionController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-26 01:08:49.277 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction application/json 124 - 500 - text/plain;+charset=utf-8 5522.8969ms
+2025-02-26 01:12:20.921 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-26 01:12:21.351 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-26 01:12:21.354 +04:00 [INF] Hosting environment: Development
+2025-02-26 01:12:21.357 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-26 01:12:21.361 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-26 01:12:21.798 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 444.3367ms
+2025-02-26 01:12:21.876 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-26 01:12:21.885 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-26 01:12:21.895 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 9.7785ms
+2025-02-26 01:12:21.958 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.2267ms
+2025-02-26 01:12:22.081 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-26 01:12:22.386 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 304.7706ms
+2025-02-26 01:13:16.787 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 124
+2025-02-26 01:13:16.801 +04:00 [INF] CORS policy execution successful.
+2025-02-26 01:13:16.877 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api)'
+2025-02-26 01:13:16.981 +04:00 [INF] Route matched with {action = "CreateTransaction", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTransactionAsync(Int32, Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 01:13:19.573 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:13:19.577 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:13:19.580 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:13:19.583 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:13:19.587 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:13:19.590 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-26 01:13:21.994 +04:00 [INF] Executed DbCommand (154ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 01:13:22.282 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-26 01:13:22.883 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 01:13:23.176 +04:00 [INF] Executed DbCommand (269ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Currency), @p3='?' (DbType = Int32), @p2='?' (DbType = Currency), @p4='?' (DbType = Int32), @p5='?' (DbType = Currency), @p6='?' (DbType = Int32), @p7='?' (Scale = 7) (DbType = DateTime2), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (DbType = Int32), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+UPDATE [Accounts] SET [Balance] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [DestinationAccount], [SourceAccount], [Status], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-02-26 01:13:23.281 +04:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-02-26 01:13:23.296 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Currency), @p1='?' (DbType = Date), @p2='?' (DbType = Int32), @p3='?' (Size = 34), @p4='?' (DbType = Boolean), @p5='?' (Size = 10), @p13='?' (DbType = Int32), @p7='?' (DbType = Currency), @p8='?' (DbType = Date), @p9='?' (DbType = Int32), @p10='?' (Size = 34), @p11='?' (DbType = Boolean), @p12='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0, [CreateDate] = @p1, [CustomerId] = @p2, [IBAN] = @p3, [IsDelete] = @p4, [Status] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+UPDATE [Accounts] SET [Balance] = @p7, [CreateDate] = @p8, [CustomerId] = @p9, [IBAN] = @p10, [IsDelete] = @p11, [Status] = @p12
+OUTPUT 1
+WHERE [Id] = @p13;
+2025-02-26 01:13:23.394 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-26 01:13:23.423 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api) in 6422.2047ms
+2025-02-26 01:13:23.429 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api)'
+2025-02-26 01:13:23.452 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction/transfer application/json 124 - 200 - application/json;+charset=utf-8 6664.8991ms
+2025-02-26 01:13:32.336 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Transaction - -
+2025-02-26 01:13:32.342 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api)'
+2025-02-26 01:13:32.353 +04:00 [INF] Route matched with {action = "GetTransactions", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Transaction]] GetTransactions() on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-26 01:13:32.365 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Transaction, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-26 01:13:32.426 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccountId], [t].[Amount], [t].[CardId], [t].[CreateDate], [t].[Date], [t].[DestinationAccount], [t].[IsDelete], [t].[SourceAccount], [t].[Status], [t].[Type]
+FROM [Transactions] AS [t]
+2025-02-26 01:13:32.456 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api) in 97.0397ms
+2025-02-26 01:13:32.459 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api)'
+2025-02-26 01:13:32.461 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Transaction - - - 200 - application/json;+charset=utf-8 124.4794ms
+2025-02-26 01:13:49.316 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Account - -
+2025-02-26 01:13:49.319 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-26 01:13:49.325 +04:00 [INF] Route matched with {action = "GetAccounts", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Account]] GetAccounts() on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-26 01:13:49.469 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Account, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-26 01:13:49.482 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Balance], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+2025-02-26 01:13:49.493 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api) in 163.7663ms
+2025-02-26 01:13:49.496 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-26 01:13:49.499 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Account - - - 200 - application/json;+charset=utf-8 182.2629ms
+2025-02-26 01:18:05.666 +04:00 [INF] Application is shutting down...

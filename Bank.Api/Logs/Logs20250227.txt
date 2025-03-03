@@ -1,0 +1,40 @@
+2025-02-27 20:31:10.073 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-27 20:31:10.618 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-27 20:31:10.620 +04:00 [INF] Hosting environment: Development
+2025-02-27 20:31:10.622 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-27 20:31:36.539 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-27 20:31:37.573 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 1047.8393ms
+2025-02-27 20:31:38.458 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-27 20:31:38.472 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 14.5112ms
+2025-02-27 20:31:38.592 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-27 20:31:38.809 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 216.1231ms
+2025-02-27 20:31:40.140 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-27 20:31:40.956 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Transaction" for actions - Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api),Bank.Api.Controllers.TransactionController.Transfer (Bank.Api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-27 20:31:43.138 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 500 - text/plain;+charset=utf-8 2998.0484ms
+2025-02-27 20:33:18.621 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-27 20:33:18.863 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-27 20:33:19.118 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-27 20:33:19.121 +04:00 [INF] Hosting environment: Development
+2025-02-27 20:33:19.128 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-27 20:33:19.255 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 398.3732ms
+2025-02-27 20:33:19.338 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-27 20:33:19.340 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-27 20:33:19.343 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 5.2504ms
+2025-02-27 20:33:19.418 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.3806ms
+2025-02-27 20:33:19.541 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-27 20:33:19.905 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Transaction" for actions - Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api),Bank.Api.Controllers.TransactionController.Transfer (Bank.Api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-27 20:33:19.931 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 500 - text/plain;+charset=utf-8 389.6185ms

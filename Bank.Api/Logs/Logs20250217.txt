@@ -1,0 +1,249 @@
+2025-02-17 18:24:45.367 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-17 18:24:46.295 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-17 18:24:46.304 +04:00 [INF] Hosting environment: Development
+2025-02-17 18:24:46.309 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-17 18:24:58.693 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-17 18:25:01.108 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 2390.6282ms
+2025-02-17 18:25:02.532 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-17 18:25:02.538 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 6.1023ms
+2025-02-17 18:25:03.012 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-17 18:25:04.246 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1233.6188ms
+2025-02-17 18:25:05.047 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-17 18:25:06.690 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 1643.4306ms
+2025-02-17 18:25:34.450 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/User - -
+2025-02-17 18:25:34.637 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.UserController.GetUsers (Bank.Api)'
+2025-02-17 18:25:35.051 +04:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.User]] GetUsers() on controller Bank.Api.Controllers.UserController (Bank.Api).
+2025-02-17 18:25:41.523 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-17 18:25:41.527 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-17 18:25:41.530 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-17 18:25:41.551 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-17 18:25:41.556 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-17 18:25:41.561 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-17 18:25:41.986 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.User, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-17 18:25:51.923 +04:00 [INF] Executed DbCommand (866ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreateDate], [u].[IsDelete], [u].[Password], [u].[RegistrationDate], [u].[UserName]
+FROM [Users] AS [u]
+2025-02-17 18:25:52.076 +04:00 [INF] Executed action Bank.Api.Controllers.UserController.GetUsers (Bank.Api) in 17003.5681ms
+2025-02-17 18:25:52.081 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.UserController.GetUsers (Bank.Api)'
+2025-02-17 18:25:52.100 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/User - - - 200 - application/json;+charset=utf-8 17650.1474ms
+2025-02-17 18:26:28.415 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/User application/json 69
+2025-02-17 18:26:28.437 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:26:28.456 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api)'
+2025-02-17 18:26:28.539 +04:00 [INF] Route matched with {action = "RegisterUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUserAsync(Bank.Model.UserModel) on controller Bank.Api.Controllers.UserController (Bank.Api).
+2025-02-17 18:26:31.189 +04:00 [INF] Executed DbCommand (1,340ms) [Parameters=[@p0='?' (Size = 128), @p1='?' (Scale = 7) (DbType = DateTime2), @p2='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Password], [RegistrationDate], [UserName])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2);
+2025-02-17 18:26:31.420 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-02-17 18:26:31.423 +04:00 [INF] Executed action Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api) in 2880.1987ms
+2025-02-17 18:26:31.426 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api)'
+2025-02-17 18:26:31.431 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/User application/json 69 - 204 - - 3015.0855ms
+2025-02-17 18:26:49.730 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/User application/json 66
+2025-02-17 18:26:49.756 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:26:49.758 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api)'
+2025-02-17 18:26:49.760 +04:00 [INF] Route matched with {action = "RegisterUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUserAsync(Bank.Model.UserModel) on controller Bank.Api.Controllers.UserController (Bank.Api).
+2025-02-17 18:26:50.069 +04:00 [INF] Executed DbCommand (270ms) [Parameters=[@p0='?' (Size = 128), @p1='?' (Scale = 7) (DbType = DateTime2), @p2='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Password], [RegistrationDate], [UserName])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2);
+2025-02-17 18:26:50.091 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-02-17 18:26:50.097 +04:00 [INF] Executed action Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api) in 331.5698ms
+2025-02-17 18:26:50.100 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api)'
+2025-02-17 18:26:50.104 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/User application/json 66 - 204 - - 373.7043ms
+2025-02-17 18:27:10.458 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/User application/json 70
+2025-02-17 18:27:10.462 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:27:10.468 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api)'
+2025-02-17 18:27:10.470 +04:00 [INF] Route matched with {action = "RegisterUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUserAsync(Bank.Model.UserModel) on controller Bank.Api.Controllers.UserController (Bank.Api).
+2025-02-17 18:27:10.525 +04:00 [INF] Executed DbCommand (49ms) [Parameters=[@p0='?' (Size = 128), @p1='?' (Scale = 7) (DbType = DateTime2), @p2='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Password], [RegistrationDate], [UserName])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2);
+2025-02-17 18:27:10.533 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-02-17 18:27:10.535 +04:00 [INF] Executed action Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api) in 60.7569ms
+2025-02-17 18:27:10.538 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.UserController.RegisterUserAsync (Bank.Api)'
+2025-02-17 18:27:10.541 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/User application/json 70 - 204 - - 82.9127ms
+2025-02-17 18:27:26.532 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/City application/json 23
+2025-02-17 18:27:26.535 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:27:26.537 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.CityController.CreateCityAsync (Bank.Api)'
+2025-02-17 18:27:26.546 +04:00 [INF] Route matched with {action = "CreateCity", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCityAsync(Bank.Model.CityModel) on controller Bank.Api.Controllers.CityController (Bank.Api).
+2025-02-17 18:27:26.731 +04:00 [INF] Executed DbCommand (94ms) [Parameters=[@p0='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([Name])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0);
+2025-02-17 18:27:26.753 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.City'.
+2025-02-17 18:27:26.821 +04:00 [INF] Executed action Bank.Api.Controllers.CityController.CreateCityAsync (Bank.Api) in 269.1661ms
+2025-02-17 18:27:26.831 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.CityController.CreateCityAsync (Bank.Api)'
+2025-02-17 18:27:26.838 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/City application/json 23 - 200 - application/json;+charset=utf-8 305.5254ms
+2025-02-17 18:27:36.710 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/City application/json 23
+2025-02-17 18:27:36.711 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:27:36.715 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.CityController.CreateCityAsync (Bank.Api)'
+2025-02-17 18:27:36.717 +04:00 [INF] Route matched with {action = "CreateCity", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCityAsync(Bank.Model.CityModel) on controller Bank.Api.Controllers.CityController (Bank.Api).
+2025-02-17 18:27:36.728 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([Name])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0);
+2025-02-17 18:27:36.733 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.City'.
+2025-02-17 18:27:36.736 +04:00 [INF] Executed action Bank.Api.Controllers.CityController.CreateCityAsync (Bank.Api) in 15.2274ms
+2025-02-17 18:27:36.739 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.CityController.CreateCityAsync (Bank.Api)'
+2025-02-17 18:27:36.743 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/City application/json 23 - 200 - application/json;+charset=utf-8 33.2927ms
+2025-02-17 18:28:28.492 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 165
+2025-02-17 18:28:28.494 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:28:28.496 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-17 18:28:28.505 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-17 18:28:29.216 +04:00 [INF] Executed DbCommand (535ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 10), @p4='?' (Size = 25), @p5='?' (Size = 9), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-17 18:28:29.255 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.Customer'.
+2025-02-17 18:28:29.270 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 758.2021ms
+2025-02-17 18:28:29.279 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-17 18:28:29.284 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 165 - 200 - application/json;+charset=utf-8 791.8754ms
+2025-02-17 18:29:06.532 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 163
+2025-02-17 18:29:06.536 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:29:06.538 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-17 18:29:06.540 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-17 18:29:06.929 +04:00 [INF] Executed DbCommand (380ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 10), @p4='?' (Size = 25), @p5='?' (Size = 9), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-17 18:29:06.949 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.Customer'.
+2025-02-17 18:29:06.961 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 415.6771ms
+2025-02-17 18:29:06.969 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-17 18:29:06.977 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 163 - 200 - application/json;+charset=utf-8 445.1337ms
+2025-02-17 18:29:28.749 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 164
+2025-02-17 18:29:28.754 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:29:28.756 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-17 18:29:28.758 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-17 18:29:28.773 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 10), @p4='?' (Size = 25), @p5='?' (Size = 9), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-17 18:29:28.780 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.Customer'.
+2025-02-17 18:29:28.782 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 17.6106ms
+2025-02-17 18:29:28.785 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-17 18:29:28.802 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 164 - 200 - application/json;+charset=utf-8 52.9553ms
+2025-02-17 18:30:38.815 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account application/json 112
+2025-02-17 18:30:38.817 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:30:38.820 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-17 18:30:38.828 +04:00 [INF] Route matched with {action = "CreateAccount", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAccountAsync(Bank.Model.AccountModel) on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-17 18:30:38.987 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-17 18:30:39.032 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api) in 197.2052ms
+2025-02-17 18:30:39.053 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-17 18:30:39.058 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account application/json 112 - 400 - application/problem+json;+charset=utf-8 243.3216ms
+2025-02-17 18:31:35.280 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Account - -
+2025-02-17 18:31:35.290 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-17 18:31:35.309 +04:00 [INF] Route matched with {action = "GetAccounts", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Account]] GetAccounts() on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-17 18:31:35.326 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Account, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-17 18:31:35.511 +04:00 [INF] Executed DbCommand (166ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Amount], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+2025-02-17 18:31:35.552 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api) in 231.3304ms
+2025-02-17 18:31:35.566 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-17 18:31:35.578 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Account - - - 200 - application/json;+charset=utf-8 297.7029ms
+2025-02-17 18:31:42.552 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account application/json 113
+2025-02-17 18:31:42.554 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:31:42.555 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-17 18:31:42.558 +04:00 [INF] Route matched with {action = "CreateAccount", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAccountAsync(Bank.Model.AccountModel) on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-17 18:31:42.890 +04:00 [INF] Executed DbCommand (184ms) [Parameters=[@p0='?' (DbType = Currency), @p1='?' (DbType = Int32), @p2='?' (Size = 34), @p3='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Accounts] ([Amount], [CustomerId], [IBAN], [Status])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-17 18:31:42.924 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.Account'.
+2025-02-17 18:31:42.949 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api) in 387.8929ms
+2025-02-17 18:31:42.958 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-17 18:31:42.969 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account application/json 113 - 200 - application/json;+charset=utf-8 415.9411ms
+2025-02-17 18:32:31.095 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account application/json 114
+2025-02-17 18:32:31.098 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:32:31.100 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-17 18:32:31.103 +04:00 [INF] Route matched with {action = "CreateAccount", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAccountAsync(Bank.Model.AccountModel) on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-17 18:32:31.372 +04:00 [INF] Executed DbCommand (255ms) [Parameters=[@p0='?' (DbType = Currency), @p1='?' (DbType = Int32), @p2='?' (Size = 34), @p3='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Accounts] ([Amount], [CustomerId], [IBAN], [Status])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-17 18:32:31.401 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.Account'.
+2025-02-17 18:32:31.421 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api) in 313.2912ms
+2025-02-17 18:32:31.432 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.CreateAccountAsync (Bank.Api)'
+2025-02-17 18:32:31.438 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account application/json 114 - 200 - application/json;+charset=utf-8 343.5380ms
+2025-02-17 18:34:01.432 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Card application/json 170
+2025-02-17 18:34:01.434 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:34:01.436 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.CardController.CreateCardAsync (Bank.Api)'
+2025-02-17 18:34:01.451 +04:00 [INF] Route matched with {action = "CreateCard", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCardAsync(Bank.Model.CardModel) on controller Bank.Api.Controllers.CardController (Bank.Api).
+2025-02-17 18:34:01.955 +04:00 [INF] Executed DbCommand (360ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4), @p2='?' (DbType = Date), @p3='?' (Size = 20), @p4='?' (Size = 100), @p5='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CreditCards] ([AccountId], [Cvc], [ExpirationDate], [Number], [Owner], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-02-17 18:34:02.009 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.Card'.
+2025-02-17 18:34:02.033 +04:00 [INF] Executed action Bank.Api.Controllers.CardController.CreateCardAsync (Bank.Api) in 575.574ms
+2025-02-17 18:34:02.046 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.CardController.CreateCardAsync (Bank.Api)'
+2025-02-17 18:34:02.055 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Card application/json 170 - 200 - application/json;+charset=utf-8 622.7966ms
+2025-02-17 18:34:33.915 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Card application/json 170
+2025-02-17 18:34:33.917 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:34:33.919 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.CardController.CreateCardAsync (Bank.Api)'
+2025-02-17 18:34:33.923 +04:00 [INF] Route matched with {action = "CreateCard", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCardAsync(Bank.Model.CardModel) on controller Bank.Api.Controllers.CardController (Bank.Api).
+2025-02-17 18:34:34.218 +04:00 [INF] Executed DbCommand (288ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4), @p2='?' (DbType = Date), @p3='?' (Size = 20), @p4='?' (Size = 100), @p5='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CreditCards] ([AccountId], [Cvc], [ExpirationDate], [Number], [Owner], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-02-17 18:34:34.235 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.Card'.
+2025-02-17 18:34:34.243 +04:00 [INF] Executed action Bank.Api.Controllers.CardController.CreateCardAsync (Bank.Api) in 315.5051ms
+2025-02-17 18:34:34.251 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.CardController.CreateCardAsync (Bank.Api)'
+2025-02-17 18:34:34.259 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Card application/json 170 - 200 - application/json;+charset=utf-8 343.5243ms
+2025-02-17 18:35:25.327 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Transaction application/json 71
+2025-02-17 18:35:25.330 +04:00 [INF] CORS policy execution successful.
+2025-02-17 18:35:25.332 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api)'
+2025-02-17 18:35:25.364 +04:00 [INF] Route matched with {action = "CreateTransaction", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTransactionAsync(Int32, Bank.Model.TransactionModel) on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-17 18:35:25.593 +04:00 [INF] Executed DbCommand (151ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Currency), @p2='?' (DbType = Int32), @p3='?' (Scale = 7) (DbType = DateTime2), @p4='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Transactions] ([AccountId], [Amount], [CardId], [Date], [Type])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-02-17 18:35:25.665 +04:00 [INF] Executing OkObjectResult, writing value of type 'Bank.DTO.Transaction'.
+2025-02-17 18:35:25.713 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api) in 343.7928ms
+2025-02-17 18:35:25.718 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.CreateTransactionAsync (Bank.Api)'
+2025-02-17 18:35:25.725 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Transaction application/json 71 - 200 - application/json;+charset=utf-8 397.4606ms
+2025-02-17 18:35:40.312 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Transaction - -
+2025-02-17 18:35:40.314 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api)'
+2025-02-17 18:35:40.320 +04:00 [INF] Route matched with {action = "GetTransactions", controller = "Transaction"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Transaction]] GetTransactions() on controller Bank.Api.Controllers.TransactionController (Bank.Api).
+2025-02-17 18:35:40.361 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Transaction, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-17 18:35:40.666 +04:00 [INF] Executed DbCommand (290ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccountId], [t].[Amount], [t].[CardId], [t].[CreateDate], [t].[Date], [t].[IsDelete], [t].[Type]
+FROM [Transactions] AS [t]
+2025-02-17 18:35:40.690 +04:00 [INF] Executed action Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api) in 337.877ms
+2025-02-17 18:35:40.695 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.TransactionController.GetTransactions (Bank.Api)'
+2025-02-17 18:35:40.699 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Transaction - - - 200 - application/json;+charset=utf-8 387.0281ms
+2025-02-17 18:36:06.228 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Account - -
+2025-02-17 18:36:06.230 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-17 18:36:06.232 +04:00 [INF] Route matched with {action = "GetAccounts", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.Account]] GetAccounts() on controller Bank.Api.Controllers.AccountController (Bank.Api).
+2025-02-17 18:36:06.263 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.Account, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-17 18:36:06.362 +04:00 [INF] Executed DbCommand (87ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Amount], [a].[CreateDate], [a].[CustomerId], [a].[IBAN], [a].[IsDelete], [a].[Status]
+FROM [Accounts] AS [a]
+2025-02-17 18:36:06.390 +04:00 [INF] Executed action Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api) in 127.7234ms
+2025-02-17 18:36:06.406 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.AccountController.GetAccounts (Bank.Api)'
+2025-02-17 18:36:06.416 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Account - - - 200 - application/json;+charset=utf-8 187.1257ms
+2025-02-17 19:08:59.929 +04:00 [INF] Application is shutting down...

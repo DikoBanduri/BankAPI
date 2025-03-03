@@ -1,0 +1,21 @@
+2025-02-28 00:00:09.653 +04:00 [INF] Application is shutting down...
+2025-02-28 00:17:25.071 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-28 00:17:25.615 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-28 00:17:25.617 +04:00 [INF] Hosting environment: Development
+2025-02-28 00:17:25.621 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-28 00:17:31.373 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-28 00:17:33.114 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 1707.2634ms
+2025-02-28 00:17:33.439 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-28 00:17:33.445 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 6.2682ms
+2025-02-28 00:17:33.539 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-28 00:17:33.705 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 166.7819ms
+2025-02-28 00:17:33.794 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-28 00:17:35.067 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 1273.6379ms
+2025-02-28 00:18:03.815 +04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/User/1/update application/json 2402
+2025-02-28 00:18:03.845 +04:00 [INF] CORS policy execution successful.
+2025-02-28 00:18:03.943 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.UserController.UpdateUser (Bank.Api)'
+2025-02-28 00:18:04.137 +04:00 [INF] Route matched with {action = "UpdateUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task UpdateUser(Bank.DTO.User) on controller Bank.Api.Controllers.UserController (Bank.Api).
+2025-02-28 00:18:05.236 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-28 00:18:05.282 +04:00 [INF] Executed action Bank.Api.Controllers.UserController.UpdateUser (Bank.Api) in 1130.4303ms
+2025-02-28 00:18:05.288 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.UserController.UpdateUser (Bank.Api)'
+2025-02-28 00:18:05.295 +04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5000/User/1/update application/json 2402 - 400 - application/problem+json;+charset=utf-8 1479.2732ms

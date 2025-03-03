@@ -1,0 +1,11 @@
+D:\AllProgramming\Bank\Bank.DTO\bin\Debug\net6.0\Bank.DTO.deps.json
+D:\AllProgramming\Bank\Bank.DTO\bin\Debug\net6.0\Bank.DTO.dll
+D:\AllProgramming\Bank\Bank.DTO\bin\Debug\net6.0\Bank.DTO.pdb
+D:\AllProgramming\Bank\Bank.DTO\obj\Debug\net6.0\Bank.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllProgramming\Bank\Bank.DTO\obj\Debug\net6.0\Bank.DTO.AssemblyInfoInputs.cache
+D:\AllProgramming\Bank\Bank.DTO\obj\Debug\net6.0\Bank.DTO.AssemblyInfo.cs
+D:\AllProgramming\Bank\Bank.DTO\obj\Debug\net6.0\Bank.DTO.csproj.CoreCompileInputs.cache
+D:\AllProgramming\Bank\Bank.DTO\obj\Debug\net6.0\Bank.DTO.dll
+D:\AllProgramming\Bank\Bank.DTO\obj\Debug\net6.0\refint\Bank.DTO.dll
+D:\AllProgramming\Bank\Bank.DTO\obj\Debug\net6.0\Bank.DTO.pdb
+D:\AllProgramming\Bank\Bank.DTO\obj\Debug\net6.0\ref\Bank.DTO.dll

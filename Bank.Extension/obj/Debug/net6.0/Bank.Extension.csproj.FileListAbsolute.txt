@@ -1,0 +1,11 @@
+D:\AllProgramming\Bank\Bank.Extension\bin\Debug\net6.0\Bank.Extension.deps.json
+D:\AllProgramming\Bank\Bank.Extension\bin\Debug\net6.0\Bank.Extension.dll
+D:\AllProgramming\Bank\Bank.Extension\bin\Debug\net6.0\Bank.Extension.pdb
+D:\AllProgramming\Bank\Bank.Extension\obj\Debug\net6.0\Bank.Extension.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllProgramming\Bank\Bank.Extension\obj\Debug\net6.0\Bank.Extension.AssemblyInfoInputs.cache
+D:\AllProgramming\Bank\Bank.Extension\obj\Debug\net6.0\Bank.Extension.AssemblyInfo.cs
+D:\AllProgramming\Bank\Bank.Extension\obj\Debug\net6.0\Bank.Extension.csproj.CoreCompileInputs.cache
+D:\AllProgramming\Bank\Bank.Extension\obj\Debug\net6.0\Bank.Extension.dll
+D:\AllProgramming\Bank\Bank.Extension\obj\Debug\net6.0\refint\Bank.Extension.dll
+D:\AllProgramming\Bank\Bank.Extension\obj\Debug\net6.0\Bank.Extension.pdb
+D:\AllProgramming\Bank\Bank.Extension\obj\Debug\net6.0\ref\Bank.Extension.dll

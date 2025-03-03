@@ -1,0 +1,12 @@
+2025-02-05 21:42:58.721 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-05 21:42:59.440 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-05 21:42:59.444 +04:00 [INF] Hosting environment: Development
+2025-02-05 21:42:59.447 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-05 21:43:16.778 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-05 21:43:21.430 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 4594.8773ms
+2025-02-05 21:43:21.616 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-05 21:43:21.621 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 5.2982ms
+2025-02-05 21:43:21.891 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-05 21:43:22.943 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1051.9778ms
+2025-02-05 21:43:23.001 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-05 21:43:24.256 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 1255.4927ms

@@ -1,0 +1,98 @@
+2025-02-09 18:27:04.590 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:04.725 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:04.726 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:04.726 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:04.726 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:04.727 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:05.124 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:05.124 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:05.124 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:05.124 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:05.125 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:27:05.125 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:28:16.095 +04:00 [INF] Now listening on: http://localhost:5000
+2025-02-09 18:28:16.721 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-09 18:28:16.725 +04:00 [INF] Hosting environment: Development
+2025-02-09 18:28:16.727 +04:00 [INF] Content root path: D:\AllProgramming\Bank\Bank.Api\
+2025-02-09 18:28:20.228 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-09 18:28:20.729 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 516.2166ms
+2025-02-09 18:28:20.827 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-09 18:28:20.893 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-09 18:28:20.983 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 156.1356ms
+2025-02-09 18:28:21.091 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 198.0685ms
+2025-02-09 18:28:21.239 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-09 18:28:21.700 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 461.7057ms
+2025-02-09 18:28:27.871 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - -
+2025-02-09 18:28:27.887 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/bankingapi/swagger/index.html - - - 200 - text/html;charset=utf-8 15.0731ms
+2025-02-09 18:28:27.967 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2025-02-09 18:28:27.968 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2025-02-09 18:28:27.973 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 5.5992ms
+2025-02-09 18:28:27.993 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.0879ms
+2025-02-09 18:28:28.129 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - -
+2025-02-09 18:28:28.160 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json/ - - - 200 - application/json;charset=utf-8 30.9888ms
+2025-02-09 18:28:45.352 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/City - -
+2025-02-09 18:28:45.391 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.CityController.GetCities (Bank.Api)'
+2025-02-09 18:28:45.438 +04:00 [INF] Route matched with {action = "GetCities", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Linq.IQueryable`1[Bank.DTO.City]] GetCities() on controller Bank.Api.Controllers.CityController (Bank.Api).
+2025-02-09 18:28:46.977 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:28:46.983 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:28:46.988 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'City' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:28:46.996 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:28:47.001 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'Transaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:28:47.005 +04:00 [WRN] The 'bool' property 'IsDelete' on entity type 'User' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2025-02-09 18:28:47.289 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Bank.DTO.City, Bank.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-09 18:28:48.256 +04:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateDate], [c].[IsDelete], [c].[Name]
+FROM [Cities] AS [c]
+2025-02-09 18:28:48.314 +04:00 [INF] Executed action Bank.Api.Controllers.CityController.GetCities (Bank.Api) in 2864.3666ms
+2025-02-09 18:28:48.319 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.CityController.GetCities (Bank.Api)'
+2025-02-09 18:28:48.333 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/City - - - 200 - application/json;+charset=utf-8 2981.6575ms
+2025-02-09 18:29:04.897 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/City application/json 23
+2025-02-09 18:29:04.908 +04:00 [INF] CORS policy execution successful.
+2025-02-09 18:29:04.917 +04:00 [INF] Executing endpoint 'Bank.Api.Controllers.CityController.CreateCity (Bank.Api)'
+2025-02-09 18:29:04.939 +04:00 [INF] Route matched with {action = "CreateCity", controller = "City"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCity(Bank.Model.CityModel) on controller Bank.Api.Controllers.CityController (Bank.Api).
+2025-02-09 18:29:05.461 +04:00 [INF] Executed DbCommand (38ms) [Parameters=[@p0='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([Name])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0);
+2025-02-09 18:29:05.553 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.City'.
+2025-02-09 18:29:05.599 +04:00 [INF] Executed action Bank.Api.Controllers.CityController.CreateCity (Bank.Api) in 655.0418ms
+2025-02-09 18:29:05.602 +04:00 [INF] Executed endpoint 'Bank.Api.Controllers.CityController.CreateCity (Bank.Api)'
+2025-02-09 18:29:05.605 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/City application/json 23 - 201 - application/json;+charset=utf-8 707.6706ms
+2025-02-09 18:29:44.963 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customer application/json 152
+2025-02-09 18:29:44.966 +04:00 [INF] CORS policy execution successful.
+2025-02-09 18:29:44.968 +04:00 [INF] Executing endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-09 18:29:44.990 +04:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomerAsync(Bank.Model.CustomerModel) on controller CustomerController (Bank.Api).
+2025-02-09 18:29:45.313 +04:00 [INF] Executed DbCommand (140ms) [Parameters=[@p0='?' (Size = 75), @p1='?' (DbType = Int32), @p2='?' (Size = 25), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Size = 25), @p5='?' (Size = 11), @p6='?' (Size = 15), @p7='?' (Size = 15), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [CityId], [FirstName], [Gender], [LastName], [PersonalNumber], [Phone1], [Phone2], [UserId])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate], INSERTED.[IsDelete]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-09 18:29:45.355 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Bank.DTO.Customer'.
+2025-02-09 18:29:45.397 +04:00 [INF] Executed action CustomerController.CreateCustomerAsync (Bank.Api) in 400.1104ms
+2025-02-09 18:29:45.400 +04:00 [INF] Executed endpoint 'CustomerController.CreateCustomerAsync (Bank.Api)'
+2025-02-09 18:29:45.403 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-02-09 18:29:45.452 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customer application/json 152 - 500 - text/plain;+charset=utf-8 488.9739ms

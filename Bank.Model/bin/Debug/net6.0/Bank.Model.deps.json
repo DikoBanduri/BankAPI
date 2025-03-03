@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Bank.Model/1.0.0": {
+        "dependencies": {
+          "Bank.DTO": "1.0.0"
+        },
+        "runtime": {
+          "Bank.Model.dll": {}
+        }
+      },
+      "Bank.DTO/1.0.0": {
+        "runtime": {
+          "Bank.DTO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bank.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bank.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
